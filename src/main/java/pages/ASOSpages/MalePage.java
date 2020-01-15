@@ -10,14 +10,22 @@ public class MalePage extends BasePage {
     private WebElement pageTitleMen;
 
     public MalePage() {
-        super("https://www.asos.com/us/men/");
+        super();
     }
 
-    public static MalePage openMalePage(){
+    public MalePage(String url) {
+        super(url);
+    }
+
+    public static MalePage openMalePage() {
+        return new MalePage("https://www.asos.com/us/men/");
+    }
+
+    public static MalePage initMalePage() {
         return new MalePage();
     }
 
-    public boolean findElementPageTitleMen(){
-      return  pageTitleMen.isDisplayed();
+    public boolean findElementPageTitleMen() {
+        return pageTitleMen.isDisplayed();
     }
 }

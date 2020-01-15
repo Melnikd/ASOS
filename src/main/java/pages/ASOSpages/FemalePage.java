@@ -20,6 +20,6 @@ public class FemalePage extends BasePage {
 
     public MalePage clickFieldMale(){
         fieldMens.click();
-        return MalePage.openMalePage();
+        return MalePage.initMalePage();
     }
 }
