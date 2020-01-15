@@ -6,7 +6,7 @@ import pages.BasePage;
 
 public class MalePage extends BasePage {
 
-    @FindBy(xpath = "//div[@data-pagetitle='Men']")
+    @FindBy(xpath = "//a[@data-testid='men-floor']")
     private WebElement pageTitleMen;
 
     public MalePage() {
@@ -19,6 +19,5 @@ public class MalePage extends BasePage {
 
     public boolean findElementPageTitleMen(){
       return  pageTitleMen.isDisplayed();
-
     }
 }
