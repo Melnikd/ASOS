@@ -28,4 +28,5 @@ public class MalePage extends BasePage {
     public boolean findElementPageTitleMen() {
         return pageTitleMen.isDisplayed();
     }
+
 }
